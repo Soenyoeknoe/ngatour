@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Calendar, MapPin, Mountain, Sun, Snowflake, Users } from "lucide-react"
 import Image from "next/image"
 
-export default function About() {
+export default function contact() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
@@ -18,17 +18,16 @@ export default function About() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/20">
           <div className="container mx-auto px-4 h-full flex flex-col justify-center">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 text-center">
-              About<br />Ngatour
+              Got any questions?
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-2xl">
-              Sydney-based tour operator specializing in unforgettable Snowy Mountains adventures 
-              and seasonal day tours.
+              Feel Free to reach out to us.
             </p>
             <div className="flex gap-4">
               <Button size="lg" className="bg-white text-black hover:bg-white/90">
-                
+                Book Now
               </Button>
-              <Button size="lg" variant="outline" className="text-grey-500 border-white hover:bg-white/20">
+              <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/20">
                 View Tours
               </Button>
             </div>
@@ -39,7 +38,7 @@ export default function About() {
       {/* Features Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-16">The Story</h2>
+          <h2 className="text-3xl font-bold text-center mb-16">Why Choose Ngatour?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="border-none shadow-lg">
               <CardContent className="pt-6">

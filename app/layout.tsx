@@ -5,7 +5,7 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Ngatour - Sydney\'s Premier Snowy Mountains Tour Operator',
+  title: 'Ngatour - Sydney\'s Premier Tour Operator Specialise in Private Tours',
   description: 'Experience the magic of the Snowy Mountains with our carefully curated tours. From winter sports to summer hiking, we offer unforgettable adventures.',
 }
 
@@ -20,11 +20,10 @@ export default function RootLayout({
         <nav className="fixed w-full z-50 bg-gradient-to-b from-black/50 to-transparent">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between h-20">
-              <div className="text-2xl font-bold text-white">Ngatour</div>
+              <div className="text-2xl font-bold text-white"><a href="/" className="">Ngatour</a></div>
               <div className="hidden md:flex space-x-8 text-white">
-                <a href="#" className="hover:text-white/80">Home</a>
-                <a href="#" className="hover:text-white/80">Tours</a>
-                <a href="#" className="hover:text-white/80">About</a>
+                <a href="toursGallery" className="hover:text-white/80">Tours</a>
+                <a href="about" className="hover:text-white/80">About</a>
                 <a href="#" className="hover:text-white/80">Contact</a>
               </div>
             </div>
@@ -41,12 +40,12 @@ export default function RootLayout({
                 </p>
               </div>
               <div>
-                <h4 className="font-semibold mb-4">Quick Links</h4>
+                <h4 className="font-semibold mb-4">Legal</h4>
                 <ul className="space-y-2 text-gray-400">
-                  <li><a href="#" className="hover:text-white">Home</a></li>
-                  <li><a href="#" className="hover:text-white">Tours</a></li>
-                  <li><a href="#" className="hover:text-white">About</a></li>
-                  <li><a href="#" className="hover:text-white">Contact</a></li>
+                  <li><a href="privacypolicy" className="hover:text-white">Privacy Policy</a></li>
+                  <li><a href="termsnadcons" className="hover:text-white">Terms and Conditions</a></li>
+                  <li><a href="cancelationandrefund" className="hover:text-white">Cancelation and Refund</a></li>
+                  <li><a href="disclamer" className="hover:text-white">Disclamer</a></li>
                 </ul>
               </div>
               <div>

@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Calendar, MapPin, Mountain, Sun, Snowflake, Users } from "lucide-react"
 import Image from "next/image"
+import { tours } from "@/lib/toursData"
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
               <Button size="lg" className="bg-white text-black hover:bg-white/90">
                 Book Now
               </Button>
-              <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/20">
+              <Button size="lg" variant="outline" className="text-grey-500 border-white hover:bg-white/20">
                 View Tours
               </Button>
             </div>
@@ -127,30 +128,3 @@ export default function Home() {
     </main>
   )
 }
-
-const tours = [
-  {
-    title: "Winter Wonderland Adventure",
-    description: "Experience the magic of snow-covered peaks with skiing and snowboarding activities.",
-    price: "299",
-    location: "Thredbo",
-    season: "winter",
-    image: "https://images.unsplash.com/photo-1551524559-8af4e6624178"
-  },
-  {
-    title: "Spring Hiking Expedition",
-    description: "Discover blooming wildflowers and pristine alpine lakes on our guided hiking tours.",
-    price: "199",
-    location: "Kosciuszko National Park",
-    season: "summer",
-    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
-  },
-  {
-    title: "Alpine Photography Tour",
-    description: "Capture breathtaking landscapes and wildlife with our professional photography guides.",
-    price: "249",
-    location: "Charlotte Pass",
-    season: "summer",
-    image: "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5"
-  }
-]
