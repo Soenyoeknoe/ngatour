@@ -23,6 +23,8 @@ export default function RootLayout({
               <div className="text-2xl font-bold text-white"><a href="/" className="">Ngatour</a></div>
               <div className="hidden md:flex space-x-8 text-white">
                 <a href="toursGallery" className="hover:text-white/80">Tours</a>
+                <a href="airportTransfer" className="hover:text-white/80">Airport Transfer</a>
+                <a href="privateCharters" className="hover:text-white/80">Private Chaters</a>
                 <a href="about" className="hover:text-white/80">About</a>
                 <a href="#" className="hover:text-white/80">Contact</a>
               </div>
